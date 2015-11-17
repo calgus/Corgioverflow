@@ -35,17 +35,21 @@ h1 {
 
 .sitetitle {
   position: absolute;
-  top: 6px;
-  left: 130px;
+  top: 38px;
+  left: 160px;
   font-size: 48px;
+  border-left: 1px solid black;
+  padding-left: 4px;
 }
 
 .siteslogan {
   position: absolute;
-  top: 65px;
-  left: 130px;
+  top: 95px;
+  left: 160px;
   font-style: italic;
   color: #666;
+  border-left: 1px solid black;
+  padding-left: 4px;
 }
 
 
@@ -94,4 +98,50 @@ h1 {
 
 .byline p {
   margin-top: 0;
+}
+
+table {
+    padding-top: 10px;
+    width: 100%;    
+}
+
+tr {
+    box-shadow: 0 0 2px black;
+}
+
+td { 
+    width: 25%;
+    border-right: 1px dotted #9597BC;
+}
+
+td:last-child { 
+    width: 25%;
+    border-right: none;
+}
+
+td p {
+    padding-left: 5px;
+    font-weight: bold;    
+}
+
+.detailed td {
+    text-align: center;
+}
+
+.detailed p {
+    padding-left: 0;    
+}
+
+.detailed td:nth-child(3) p {
+    color: #475B9B;
+}
+
+td a {
+    color: blue;
+    text-decoration: none;
+    padding-left: 5px;
+}
+
+td a:hover {
+    color: #9597BC;
 }

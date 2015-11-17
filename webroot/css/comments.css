@@ -1,0 +1,70 @@
+.comments { 
+}
+
+.singlecomment {
+    position: relative;
+    width: 600px;
+    margin: 10px;
+    padding: 2px;
+    border-bottom: 1px dotted black;
+    overflow: auto;
+}
+
+.comments .commentname {
+    width: 380px;
+    height: 20px;
+    color: #21759b;
+    font-family: "Courier"; 
+    font-weight: bold;
+    position: absolute;
+    top: -20px;
+    left: 90px;
+}
+
+.comments .commentid {
+    position: absolute;
+    top: -16px;
+    right: 0px;
+    font-size: smaller;
+}
+
+.comments .commentid a {
+    text-decoration: none;
+    color: blue;
+    font-size: larger;
+}
+
+.comments .commentgravatar {
+    width: 90px;
+    float: left;  
+}
+
+.comments .commentgravatar img {
+    border: 2px inset black;    
+}
+
+.comments .commentcontent {
+    float: right;
+    width: 85%;
+}
+
+.comments .commentweb {
+    display: inline-block;
+    float: left;
+    margin-left: 90px;
+    clear: both;
+    font-size: smaller;
+    color: #42607A;
+}
+
+.comments .commentweb a {
+    text-decoration: none;    
+    color: blue;
+}
+
+.comments .commentmail {
+    display: inline-block;
+    float: right;
+    font-size: smaller;
+    color: #42607A;
+}

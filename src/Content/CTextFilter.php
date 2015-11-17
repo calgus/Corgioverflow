@@ -98,7 +98,7 @@ class CTextFilter
         return preg_replace_callback(
             '#\b(?<![href|src]=[\'"])https?://[^\s()<>]+(?:\([\w\d]+\)|([^[:punct:]\s]|/))#',
             function ($matches) {
-                return "<a href=\'{$matches[0]}\'>{$matches[0]}</a>";
+                return "<a href='{$matches[0]}'>{$matches[0]}</a>";
             },
             $text
         );

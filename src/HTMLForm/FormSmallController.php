@@ -30,4 +30,24 @@ class FormSmallController
             'content' => $form->getHTML()
         ]);
     }
+    
+    /**
+     * Index action using external form.
+     *
+     */
+    public function signupAction()
+    {
+        $this->di->session();
+
+        $form = new \Anax\HTMLForm\CFormSignup();
+        $form->setDI($this->di);
+        $form->check();
+
+        $this->di->theme->setTitle("Testing CForm with Anax");
+        $this->di->views->add('default/page', [
+            'title' => "Skapa användare:",
+            'content' => $form->getHTML()
+        ]);
+    }
+    
 }
