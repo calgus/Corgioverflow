@@ -6,7 +6,8 @@ Usage
 
 Composer
 --------
-If doing manually, add
+Corgioverflow git should come with the vendor map that contains all needed 
+composer packages. If doing manually, add
 ```
     "require": {
         "php": ">=5.4",
@@ -15,8 +16,7 @@ If doing manually, add
         "mos/cdatabase": "dev-master"
     }
 ```
-to your `composer.json` file, use Packagist/Composer and update. This require is 
-already available in the composer.json file located in the git package. Then manually 
+to your `composer.json` file, use Packagist/Composer and update, and then manually 
 edit `vendor/mos/cform/src/HTMLForm/CForm.php` with:
 ```PHP
     /**

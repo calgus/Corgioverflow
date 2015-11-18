@@ -16,8 +16,6 @@ class UsersController implements \Anax\DI\IInjectionAware
      */
     public function initialize()
     {
-        $this->users = new \Anax\Users\User();
-        $this->users->setDI($this->di);
         $this->vusers = new \Anax\Users\Vuser();
         $this->vusers->setDI($this->di);
         $this->vcomments = new \Anax\Comment\Vcomments();
@@ -233,8 +231,8 @@ class UsersController implements \Anax\DI\IInjectionAware
     public function updateAction()
     {
         if ($this->session->has('user')) {
-            $user = $this->users->query()
-                        ->where('acronym = ?')
+            $user = $this->vusers->query()
+                        ->where('user = ?')
                         ->execute([$this->session->get('user')]);
             $email = $user[0]->email;
             $name = $user[0]->name;
